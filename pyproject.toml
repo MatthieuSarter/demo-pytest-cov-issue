@@ -1,0 +1,25 @@
+[project]
+name = "demo-pytest-cov-issue"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Matthieu Sarter"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "coverage (>=7.10.4,<8.0.0)",
+    "pytest (>=8.4.1,<9.0.0)",
+    "pytest-cov (>=6.2.1,<7.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+branch = true
